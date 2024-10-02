@@ -1,0 +1,62 @@
+/* Estilos generales */
+.cabeza {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto; /* Cambiado a 1fr para mejor adaptabilidad */
+    margin: 50px; 
+    margin-top: 40px;
+}
+
+.sesion2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.menu {
+    display: flex;
+    gap: 100px;
+}
+
+/* Estilos para el fondo de la página */
+body {
+    background-image: url("ALGORITMO/stactic/img/yo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 1200px) {
+    .cabeza {
+        grid-template-columns: 1fr auto; /* Ajustado para pantallas medianas */
+    }
+    .menu {
+        gap: 50px; /* Reducido el espacio entre elementos del menú */
+    }
+}
+
+@media (max-width: 768px) {
+    .cabeza {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        margin: 20px; /* Reducido el margen */
+    }
+    .menu {
+        flex-direction: column; /* Cambiado a columna para mejor visualización en pantallas pequeñas */
+        gap: 20px; /* Reducido el espacio entre elementos del menú */
+    }
+}
+
+@media (max-width: 480px) {
+    .cabeza {
+        margin: 10px; /* Reducido el margen aún más en pantallas muy pequeñas */
+    }
+    .menu {
+        gap: 10px; /* Reducido el espacio entre elementos del menú */
+    }
+}
